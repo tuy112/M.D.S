@@ -1,0 +1,481 @@
+.wrap {
+    max-width: 480px;
+    margin: 0 auto;
+    font-family: 'Noto Sans KR', sans-serif;
+    background: #f4f6fa;
+    min-height: 100vh;
+}
+
+/* header */
+.header {
+  background: linear-gradient(135deg,#1e3a8a,#2563eb);
+  color: #fff;
+  padding: 24px 20px;
+  text-align: center;
+}
+
+.headerTitle {
+  font-size: 14px;
+}
+
+.headerMain {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* =============================== */
+
+/* main - container */
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: #f4f6fa;
+  padding-bottom: 40px;
+}
+
+/* main - score card */
+.scoreSpace {
+  padding: 14px;
+}
+
+.scoreCard {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.scoreLeft {
+  flex: 1;
+  background: #e5e7eb;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.scoreRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.scoreRow:nth-child(2) {
+  border-bottom: 1px solid #999999;
+}
+
+.teamName {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #0f172a;
+}
+.teamDot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+}
+.red {
+  background: #ef4444;
+}
+.blue {
+  background: #2563eb;
+}
+
+.scoreRow strong {
+  font-size: 20px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.inning {
+  margin-top: 5px;
+  text-align: center;
+  color: #64748b;
+  font-size: 12px;
+}
+
+
+/* main - diamond */
+.diamondContainer {
+  width: 110px;
+  height: 110px;
+  position: relative;
+  flex-shrink: 0;
+  margin-left: 10px;
+}
+
+.diamond {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  border: 2px solid #cbd5e1;
+  background: #fef3c7;
+}
+
+.base {
+  width: 16px;
+  height: 16px;
+  background: #ffffff;
+  border: 2px solid #cbd5e1;
+  position: absolute;
+  transform: rotate(45deg);
+}
+
+.base.runner {
+  background: #2563eb;
+  border-color: #1e40af;
+}
+.base.home { bottom: 5px; left: 50%; transform: translateX(-50%) rotate(45deg); background: #fff; }
+.base.first { right: 5px; top: 50%; transform: translateY(-50%) rotate(45deg); }
+.base.second { top: 5px; left: 50%; transform: translateX(-50%) rotate(45deg); }
+.base.third { left: 5px; top: 50%; transform: translateY(-50%) rotate(45deg); }
+
+
+/* outs */
+.outs {
+  text-align: center;
+  font-size: 13px;
+  color: #64748b;
+  margin-top: 5px;
+}
+
+.outCircles {
+  display: inline-flex;
+  gap: 4px;
+  margin-right: 6px;
+}
+
+.outCircle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1.5px solid #cbd5e1;
+  display: inline-block;
+}
+
+.outCircle.on {
+  background: #dc2626;
+  border-color: #dc2626;
+}
+
+
+/* main - question prompt */
+.questionPrompt {
+  margin: 20px;
+  padding: 24px;
+  border-radius: 16px;
+  background: linear-gradient(135deg,#2563eb,#3b82f6);
+  color: #fff;
+  text-align: center;
+}
+
+.questionPrompt .questionTeam {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.questionPrompt .questionSituation {
+  font-size: 12px;
+  color: #dbeafe;
+  margin-bottom: 10px;
+}
+
+.questionPrompt .questionMain {
+  font-size: 18px;
+  color: #dbeafe;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+/* main - card section */
+.cardSection {
+  margin: 14px 20px;
+  background: #eef3fb;
+  border-radius: 18px;
+  overflow: hidden;
+  padding: 0;
+  box-shadow: none;
+}
+
+.sectionHeader {
+  padding: 12px 16px;
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.sectionHeader.away {
+  background: #f3dada;
+  color: #991b1b;
+}
+ 
+.sectionHeader.home {
+  background: #dbe7f7;
+  color: #1d4ed8;
+}
+
+.sectionHeader p {
+  color: inherit;
+}
+
+.sectionHeader p {
+  color: #333;
+  font-size: 12px;
+}
+
+/* main - batter card */
+.batterCard,
+.pitcherCard {
+  margin: 14px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 14px;
+}
+
+.batterCard .batterTitle {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.batterCard .badge {
+  background: #2563eb;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.batterCard .todayRecord {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 8px;
+}
+
+.batterCard .statRow {
+  font-size: 14px;
+  color: #1e40af;
+}
+
+.playerRow {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  gap: 6px;
+  padding: 6px 0;
+  font-size: 12px;
+  border-bottom: 1px dashed #e2e8f0;
+  align-items: center;
+}
+
+.playerRow:last-child { border-bottom: none; }
+
+.playerNum {
+  background: #1e3a8a;
+  color: white;
+  text-align: center;
+  padding: 2px 0;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 11px;
+}
+
+.playerNum.pinch { background: #64748b; }
+
+.playerInfo {
+  font-size: 12.5px;
+}
+
+.playerInfo .name {
+  font-weight: 600;
+  color: #1a2238;
+}
+
+.playerInfo .stats {
+  color: #64748b;
+  font-size: 11.5px;
+  margin-top: 2px;
+}
+.playerInfo .warn { color: #dc2626; font-weight: 600; }
+
+/* main - pitcher card */
+.pitcherCard .pitcherName {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.pitcherStatus {
+  background: #fff7d6;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.pitcherCard .statRow {
+  font-size: 14px;
+  color: #1e40af;
+}
+
+/* lineup */
+.lineup {
+  padding: 0 14px 14px;
+}
+
+.lineupTitle {
+  font-size: 12px;
+  color: #64748b;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.bullpenTable {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bullpenTable th, .bullpenTable td {
+  border: 1px solid #e5e7eb;
+  padding: 8px;
+  text-align: center;
+}
+
+.bullpenTable th {
+  background: #f1f5f9;
+  font-size: 12px;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.bullpenTable td {
+  font-size: 13px;
+}
+
+.current {
+  background: #dbeafe;
+}
+
+
+/* main - button area */
+.buttonArea {
+  padding: 0 20px 30px;
+}
+
+.choiceButton {
+  width: 100%;
+  background: white;
+  border: 2px solid #dbe4f0;
+  border-radius: 14px;
+  padding: 18px 16px;
+  margin-bottom: 12px;
+  box-shadow: none;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.choiceButton:hover {
+  border-color: #2563eb;
+  background: white;
+}
+
+.choiceLeft {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.choiceBadge {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: #1e3a8a;
+  color: white;
+  font-weight: 700;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choiceArrow {
+  color: #94a3b8;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.primaryButton {
+  width: calc(100% - 40px);
+  margin: 20px;
+  border: none;
+  background: #2563eb;
+  color: #fff;
+  padding: 16px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.backButton {
+  width: 100%;
+  border: none;
+  background: #64748b;
+  color: #fff;
+  padding: 14px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.resultCard {
+  background: #fff;
+  margin: 20px;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.08);
+}
+
+.resultCard h3 {
+  margin-bottom: 16px;
+}
+
+.resultCard p {
+  margin-bottom: 16px;
+}
+
+.pointBox {
+  display: inline-block;
+  background: #2563eb;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+/* ============================ */
+
+/* footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.footer p {
+    font-size: 12px;
+    color: #64748b;
+}
