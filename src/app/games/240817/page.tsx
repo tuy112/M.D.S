@@ -1,6 +1,8 @@
 'use client';
 
 import { useState } from 'react';
+import Header from '@/app/components/header/Header';
+import Footer from '@/app/components/footer/Footer';
 import styles from './style.module.css';
 
 const subChoices = {
@@ -128,6 +130,7 @@ export default function Home() {
     <div className={styles.wrap}>
         
         {/* header */}
+        <Header/>
         <div className={styles.header}>
             <div className={styles.headerTitle}>DUGOUT · 덕아웃 선택 #1</div>
             <h1 className={styles.headerMain}>2024.08.17 광주 · 7회초</h1>
@@ -356,9 +359,7 @@ export default function Home() {
         </main>
 
         {/* footer */}
-        <footer className={styles.footer}>
-            <p>&copy; 2026 DUGOUT. All rights reserved.</p>
-        </footer>
+        <Footer/>
     </div>
   );
 }
