@@ -1,4 +1,4 @@
-'use client';
+'use client'; 
 
 import { useState } from 'react';
 import Header from '@/app/components/header/Header';
@@ -131,13 +131,15 @@ export default function Home() {
         
         {/* header */}
         <Header/>
-        <div className={styles.header}>
-            <div className={styles.headerTitle}>DUGOUT · 덕아웃 선택 #1</div>
-            <h1 className={styles.headerMain}>2024.08.17 광주 · 7회초</h1>
-        </div>
         
         {/* main */}
         <main className={styles.container}>
+            
+            {/* main - mainHeader */}
+            <div className={styles.mainHeader}>
+                <div className={styles.mainHeaderTitle}>DUGOUT · 덕아웃 선택 #1</div>
+                <h1 className={styles.mainHeaderTxt}>2024.08.17 광주 · 7회초</h1>
+            </div>
 
             {/* main - score card */}
             <div className={styles.scoreSpace}>
