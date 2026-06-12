@@ -6,23 +6,6 @@
     min-height: 100vh;
 }
 
-/* header */
-.header {
-  background: linear-gradient(135deg,#1e3a8a,#2563eb);
-  color: #fff;
-  padding: 24px 20px;
-  text-align: center;
-}
-
-.headerTitle {
-  font-size: 14px;
-}
-
-.headerMain {
-  font-size: 20px;
-  font-weight: 700;
-}
-
 /* =============================== */
 
 /* main - container */
@@ -32,6 +15,24 @@
   min-height: 100vh;
   background: #f4f6fa;
   padding-bottom: 40px;
+}
+
+/* main - mainHeader */
+.mainHeader {
+  background: linear-gradient(135deg,#1e3a8a,#2563eb);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.mainHeaderTitle {
+  font-size: 13px;
+}
+
+.mainHeaderTxt {
+  font-size: 18px;
+  font-weight: 700;
 }
 
 /* main - score card */
@@ -50,7 +51,7 @@
 
 .scoreLeft {
   flex: 1;
-  background: #e5e7eb;
+  background: #f4f4f5;
   padding: 10px;
   border-radius: 10px;
 }
@@ -142,9 +143,10 @@
 /* outs */
 .outs {
   text-align: center;
-  font-size: 13px;
-  color: #64748b;
+  font-size: 12px;
   margin-top: 5px;
+  border-radius: 12px;
+  background-color: #fff;
 }
 
 .outCircles {
@@ -169,8 +171,8 @@
 
 /* main - question prompt */
 .questionPrompt {
-  margin: 20px;
-  padding: 24px;
+  margin: 0 20px 20px 20px;
+  padding: 18px;
   border-radius: 16px;
   background: linear-gradient(135deg,#2563eb,#3b82f6);
   color: #fff;
@@ -178,27 +180,27 @@
 }
 
 .questionPrompt .questionTeam {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 700;
 }
 
 .questionPrompt .questionSituation {
-  font-size: 12px;
+  font-size: 13px;
   color: #dbeafe;
   margin-bottom: 10px;
 }
 
 .questionPrompt .questionMain {
-  font-size: 18px;
+  font-size: 17px;
   color: #dbeafe;
-  line-height: 1.6;
-  font-weight: 600;
+  line-height: 1.5;
+  font-weight: 700;
 }
 
 /* main - card section */
 .cardSection {
   margin: 14px 20px;
-  background: #eef3fb;
+  background: #fff;
   border-radius: 18px;
   overflow: hidden;
   padding: 0;
@@ -235,7 +237,7 @@
 .batterCard,
 .pitcherCard {
   margin: 14px;
-  background: #fff;
+  background: #f6fafa;
   border-radius: 10px;
   padding: 14px;
 }
@@ -247,23 +249,25 @@
 }
 
 .batterCard .badge {
-  background: #2563eb;
-  color: #fff;
-  padding: 4px 10px;
-  border-radius: 12px;
-  font-size: 12px;
+  background: #f0e4e4;
+  color: #990303;
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-size: 11px;
   margin-left: 10px;
 }
 
 .batterCard .todayRecord {
-  font-size: 14px;
+  font-size: 13px;
+  padding: 4px 8px;
   color: #64748b;
+  background-color: #cde0e4;
   margin-bottom: 8px;
 }
 
 .batterCard .statRow {
-  font-size: 14px;
-  color: #1e40af;
+  font-size: 13px;
+  line-height: 1.6;
 }
 
 .playerRow {
@@ -288,7 +292,9 @@
   font-size: 11px;
 }
 
-.playerNum.pinch { background: #64748b; }
+.playerNum.pinch { 
+  background: #64748b; 
+}
 
 .playerInfo {
   font-size: 12.5px;
@@ -318,11 +324,13 @@
   border-radius: 8px;
   padding: 10px;
   margin: 10px 0;
+  font-size: 13px;
+  line-height: 1.6;
 }
 
 .pitcherCard .statRow {
-  font-size: 14px;
-  color: #1e40af;
+  font-size: 13px;
+  line-height: 1.6;
 }
 
 /* lineup */
@@ -334,8 +342,8 @@
   font-size: 12px;
   color: #64748b;
   font-weight: 600;
-  text-transform: uppercase;
   letter-spacing: 0.5px;
+  margin-bottom: 8px;
 }
 
 .bullpenTable {
